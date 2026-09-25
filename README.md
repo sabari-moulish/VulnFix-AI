@@ -551,7 +551,7 @@ Run:
 Current validation status:
 
 ```text
-92 / 92 tests passed
+99 / 99 tests passed
 ```
 
 The tests cover:
@@ -564,6 +564,28 @@ The tests cover:
 * Risk assessment
 * Remediation
 * Retesting
+* AI Defense Lab 5-case evaluation suite
+
+---
+
+# 📊 Evaluation Results
+
+VulnFix AI includes a standardized evaluation suite covering the 5 core evaluation cases from the AI Defense Lab framework. All 5 cases are dynamically evaluated from actual security-control execution, including scope enforcement, deterministic validation, and rate limiting:
+
+* **Normal: PASS** — Legitimate requests to authorized local endpoints operate successfully with HTTP 200 and expected data.
+* **Attack/Positive: PASS** — Controlled vulnerabilities across all 3 classes are detected and validated with reproducible evidence.
+* **Negative: PASS** — Benign inputs produce zero false positives; remediated secure mode safely neutralizes attack probes.
+* **Failure: PASS** — Out-of-scope, malformed, and unreachable targets are safely handled with zero unauthorized network traffic.
+* **Adversarial: PASS** — Malformed and evasive inputs (SSRF to cloud metadata `169.254.169.254`, public IP `8.8.8.8`, arbitrary scheme `file://`, unauthorized port `22`, and scan flooding) cannot bypass scope controls or rate limits.
+
+### 📈 Verified Platform Telemetry
+
+* **99/99 tests passed** across all security engines and evaluation modules
+* **16 endpoints discovered** across application routes, APIs, and forms
+* **9 controllable inputs** mapped for targeted evaluation
+* **6/6 vulnerabilities validated** with deterministic differential evidence
+* **3 vulnerability classes** evaluated (SQLi CWE-89, Reflected XSS CWE-79, IDOR CWE-639)
+* **6/6 FIXED_VERIFIED after remediation** confirmed through proof-of-fix retesting
 
 ---
 
@@ -651,7 +673,7 @@ pytest -q
 Expected result:
 
 ```text
-92 passed
+99 passed
 ```
 
 ---

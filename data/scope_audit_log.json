@@ -1,1402 +1,1402 @@
 [
   {
-    "timestamp": "2026-09-25T12:26:05.755707",
-    "target": "ftp://localhost:21",
+    "timestamp": "2026-09-25T23:35:33.013453",
+    "target": "http://127.0.0.1:5000/api/search",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:33.036445",
+    "target": "http://127.0.0.1:5000/api/search",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:33.067122",
+    "target": "http://127.0.0.1:5000/api/search",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:33.144861",
+    "target": "http://127.0.0.1:5000",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:33.153761",
+    "target": "http://127.0.0.1:5000/api/greet",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:33.203873",
+    "target": "http://127.0.0.1:5000",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:33.210813",
+    "target": "http://127.0.0.1:5000",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:33.216051",
+    "target": "http://127.0.0.1:5000/api/greet",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:33.297034",
+    "target": "http://127.0.0.1:5000",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:33.305409",
+    "target": "http://127.0.0.1:5000/api/record/1",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:33.318405",
+    "target": "http://127.0.0.1:5000/api/record/2",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:33.384376",
+    "target": "http://127.0.0.1:5000",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:33.395008",
+    "target": "http://127.0.0.1:5000/api/record/1",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:33.409473",
+    "target": "http://127.0.0.1:5000/api/record/2",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:33.483095",
+    "target": "http://127.0.0.1:5000",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:33.532556",
+    "target": "http://127.0.0.1:5000/api/search",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:33.590533",
+    "target": "http://127.0.0.1:5000",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:33.599997",
+    "target": "http://127.0.0.1:5000",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:33.605359",
+    "target": "http://127.0.0.1:5000/api/search",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:33.636669",
+    "target": "http://127.0.0.1:5000/api/search",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:33.667721",
+    "target": "http://127.0.0.1:5000/api/search",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:33.701635",
+    "target": "http://127.0.0.1:5000",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:33.709927",
+    "target": "http://127.0.0.1:5000/api/search",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:33.745059",
+    "target": "http://127.0.0.1:5000/api/search",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:33.775255",
+    "target": "http://127.0.0.1:5000/api/search",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:33.882450",
+    "target": "http://127.0.0.1:5000",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:33.891006",
+    "target": "http://127.0.0.1:5000/api/search",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:33.930993",
+    "target": "http://127.0.0.1:5000/api/search",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:33.948588",
+    "target": "http://127.0.0.1:5000/api/search",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:34.013296",
+    "target": "http://127.0.0.1:5000/api/search",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:34.018796",
+    "target": "http://127.0.0.1:5000",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:34.024883",
+    "target": "http://127.0.0.1:5000/api/search",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:34.067655",
+    "target": "https://unauthorized-remote-site.com",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "REJECTED",
+    "reason": "Forbidden target host 'unauthorized-remote-site.com'. Only strictly authorized local testbeds (localhost, 127.0.0.1) are permitted. External scanning is prohibited."
+  },
+  {
+    "timestamp": "2026-09-25T23:35:34.074610",
+    "target": "https://unauthorized-remote-site.com",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "REJECTED",
+    "reason": "Forbidden target host 'unauthorized-remote-site.com'. Only strictly authorized local testbeds (localhost, 127.0.0.1) are permitted. External scanning is prohibited."
+  },
+  {
+    "timestamp": "2026-09-25T23:35:34.129321",
+    "target": "http://127.0.0.1:5000",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:34.139172",
+    "target": "http://127.0.0.1:5000/api/greet",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:34.228097",
+    "target": "http://127.0.0.1:5000",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:34.236026",
+    "target": "http://127.0.0.1:5000/api/greet",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:34.330483",
+    "target": "http://127.0.0.1:5000",
+    "operation": "VULNERABILITY_DETECTION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:34.336326",
+    "target": "http://127.0.0.1:5000",
+    "operation": "DISCOVERY_ATTACK_SURFACE",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:34.836842",
+    "target": "http://127.0.0.1:5000",
+    "operation": "VULNERABILITY_DETECTION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:34.847159",
+    "target": "http://127.0.0.1:5000",
+    "operation": "DISCOVERY_ATTACK_SURFACE",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:35.636554",
+    "target": "http://127.0.0.1:5000",
+    "operation": "VULNERABILITY_DETECTION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:35.648289",
+    "target": "http://127.0.0.1:5000",
+    "operation": "DISCOVERY_ATTACK_SURFACE",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:35:36.029836",
+    "target": "https://unauthorized-remote-site.com",
+    "operation": "VULNERABILITY_DETECTION",
+    "decision": "REJECTED",
+    "reason": "Forbidden target host 'unauthorized-remote-site.com'. Only strictly authorized local testbeds (localhost, 127.0.0.1) are permitted. External scanning is prohibited."
+  },
+  {
+    "timestamp": "2026-09-25T23:38:19.195613",
+    "target": "http://127.0.0.1:5000",
+    "operation": "DISCOVERY_ATTACK_SURFACE",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:19.357989",
+    "target": "http://127.0.0.1:5000",
+    "operation": "DISCOVERY_ATTACK_SURFACE",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:19.543317",
+    "target": "http://127.0.0.1:5000",
+    "operation": "DISCOVERY_ATTACK_SURFACE",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:19.791202",
+    "target": "http://127.0.0.1:5000",
+    "operation": "DISCOVERY_ATTACK_SURFACE",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:19.802877",
+    "target": "http://127.0.0.1:5000",
+    "operation": "DISCOVERY_ATTACK_SURFACE",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:19.903498",
+    "target": "http://127.0.0.1:5000",
+    "operation": "DISCOVERY_ATTACK_SURFACE",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:19.924060",
+    "target": "https://unauthorized-domain.com",
+    "operation": "DISCOVERY_ATTACK_SURFACE",
+    "decision": "REJECTED",
+    "reason": "Forbidden target host 'unauthorized-domain.com'. Only strictly authorized local testbeds (localhost, 127.0.0.1) are permitted. External scanning is prohibited."
+  },
+  {
+    "timestamp": "2026-09-25T23:38:19.983945",
+    "target": "http://169.254.169.254/latest/meta-data/",
     "operation": "SCOPE_VALIDATION",
     "decision": "REJECTED",
-    "reason": "Unsupported scheme 'ftp'. Only ('http', 'https') are allowed."
+    "reason": "Forbidden target host '169.254.169.254'. Only strictly authorized local testbeds (localhost, 127.0.0.1) are permitted. External scanning is prohibited."
   },
   {
-    "timestamp": "2026-09-25T12:26:05.768774",
-    "target": "https://malicious-or-remote.com:8080",
-    "operation": "ADD_EXPLICIT_TARGET",
-    "decision": "REJECTED",
-    "reason": "Cannot add target 'https://malicious-or-remote.com:8080': Strict local-only mode rejects non-local hosts."
-  },
-  {
-    "timestamp": "2026-09-25T12:26:05.781555",
-    "target": "https://example.com",
-    "operation": "SCOPE_VALIDATION",
-    "decision": "REJECTED",
-    "reason": "Forbidden target host 'example.com'. Only strictly authorized local testbeds (localhost, 127.0.0.1) are permitted. External scanning is prohibited."
-  },
-  {
-    "timestamp": "2026-09-25T12:26:05.793893",
+    "timestamp": "2026-09-25T23:38:19.993470",
     "target": "http://8.8.8.8:8080",
     "operation": "SCOPE_VALIDATION",
     "decision": "REJECTED",
     "reason": "Forbidden target host '8.8.8.8'. Only strictly authorized local testbeds (localhost, 127.0.0.1) are permitted. External scanning is prohibited."
   },
   {
-    "timestamp": "2026-09-25T12:26:05.806414",
+    "timestamp": "2026-09-25T23:38:19.998758",
+    "target": "file:///etc/passwd",
+    "operation": "SCOPE_VALIDATION",
+    "decision": "REJECTED",
+    "reason": "Unsupported scheme 'file'. Only ('http', 'https') are allowed."
+  },
+  {
+    "timestamp": "2026-09-25T23:38:20.005642",
+    "target": "http://127.0.0.1:22",
+    "operation": "SCOPE_VALIDATION",
+    "decision": "REJECTED",
+    "reason": "Port 22 is not in the allowed local testing ports list: [80, 443, 3000, 4200, 5000, 5173, 8000, 8080, 8443, 8888, 9000, 9090]."
+  },
+  {
+    "timestamp": "2026-09-25T23:38:20.010597",
+    "target": "https://attacker-c2-server.com:8443",
+    "operation": "ADD_EXPLICIT_TARGET",
+    "decision": "REJECTED",
+    "reason": "Cannot add target 'https://attacker-c2-server.com:8443': Strict local-only mode rejects non-local hosts."
+  },
+  {
+    "timestamp": "2026-09-25T23:38:20.015447",
+    "target": "http://127.0.0.1:5000",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:20.021875",
+    "target": "http://127.0.0.1:5000/api/search",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:20.029636",
+    "target": "http://127.0.0.1:5000/api/search",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:20.039114",
+    "target": "http://127.0.0.1:5000/api/search",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:20.049249",
+    "target": "http://127.0.0.1:5000/api/search",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:20.190757",
+    "target": "https://unauthorized-remote-site.com",
+    "operation": "SCOPE_VALIDATION",
+    "decision": "REJECTED",
+    "reason": "Forbidden target host 'unauthorized-remote-site.com'. Only strictly authorized local testbeds (localhost, 127.0.0.1) are permitted. External scanning is prohibited."
+  },
+  {
+    "timestamp": "2026-09-25T23:38:20.199196",
+    "target": "invalid://bad-target-url:::80",
+    "operation": "SCOPE_VALIDATION",
+    "decision": "REJECTED",
+    "reason": "Unsupported scheme 'invalid'. Only ('http', 'https') are allowed."
+  },
+  {
+    "timestamp": "2026-09-25T23:38:20.206095",
+    "target": "https://unauthorized-remote-site.com",
+    "operation": "VULNERABILITY_DETECTION",
+    "decision": "REJECTED",
+    "reason": "Forbidden target host 'unauthorized-remote-site.com'. Only strictly authorized local testbeds (localhost, 127.0.0.1) are permitted. External scanning is prohibited."
+  },
+  {
+    "timestamp": "2026-09-25T23:38:21.391379",
+    "target": "http://127.0.0.1:5000",
+    "operation": "NORMAL_REQUEST",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:21.513893",
+    "target": "http://127.0.0.1:5000",
+    "operation": "NORMAL_REQUEST",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:21.724802",
+    "target": "https://unauthorized-remote-site.com",
+    "operation": "SCOPE_VALIDATION",
+    "decision": "REJECTED",
+    "reason": "Forbidden target host 'unauthorized-remote-site.com'. Only strictly authorized local testbeds (localhost, 127.0.0.1) are permitted. External scanning is prohibited."
+  },
+  {
+    "timestamp": "2026-09-25T23:38:21.738230",
+    "target": "invalid://bad-target-url:::80",
+    "operation": "SCOPE_VALIDATION",
+    "decision": "REJECTED",
+    "reason": "Unsupported scheme 'invalid'. Only ('http', 'https') are allowed."
+  },
+  {
+    "timestamp": "2026-09-25T23:38:21.745466",
+    "target": "https://unauthorized-remote-site.com",
+    "operation": "VULNERABILITY_DETECTION",
+    "decision": "REJECTED",
+    "reason": "Forbidden target host 'unauthorized-remote-site.com'. Only strictly authorized local testbeds (localhost, 127.0.0.1) are permitted. External scanning is prohibited."
+  },
+  {
+    "timestamp": "2026-09-25T23:38:22.769408",
+    "target": "http://169.254.169.254/latest/meta-data/",
+    "operation": "SCOPE_VALIDATION",
+    "decision": "REJECTED",
+    "reason": "Forbidden target host '169.254.169.254'. Only strictly authorized local testbeds (localhost, 127.0.0.1) are permitted. External scanning is prohibited."
+  },
+  {
+    "timestamp": "2026-09-25T23:38:22.778645",
+    "target": "http://8.8.8.8:8080",
+    "operation": "SCOPE_VALIDATION",
+    "decision": "REJECTED",
+    "reason": "Forbidden target host '8.8.8.8'. Only strictly authorized local testbeds (localhost, 127.0.0.1) are permitted. External scanning is prohibited."
+  },
+  {
+    "timestamp": "2026-09-25T23:38:22.784163",
+    "target": "file:///etc/passwd",
+    "operation": "SCOPE_VALIDATION",
+    "decision": "REJECTED",
+    "reason": "Unsupported scheme 'file'. Only ('http', 'https') are allowed."
+  },
+  {
+    "timestamp": "2026-09-25T23:38:22.788992",
+    "target": "http://127.0.0.1:22",
+    "operation": "SCOPE_VALIDATION",
+    "decision": "REJECTED",
+    "reason": "Port 22 is not in the allowed local testing ports list: [80, 443, 3000, 4200, 5000, 5173, 8000, 8080, 8443, 8888, 9000, 9090]."
+  },
+  {
+    "timestamp": "2026-09-25T23:38:22.792817",
+    "target": "https://attacker-c2-server.com:8443",
+    "operation": "ADD_EXPLICIT_TARGET",
+    "decision": "REJECTED",
+    "reason": "Cannot add target 'https://attacker-c2-server.com:8443': Strict local-only mode rejects non-local hosts."
+  },
+  {
+    "timestamp": "2026-09-25T23:38:22.796527",
+    "target": "http://127.0.0.1:5000",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:22.803390",
+    "target": "http://127.0.0.1:5000/api/search",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:22.810871",
+    "target": "http://127.0.0.1:5000/api/search",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:22.820481",
+    "target": "http://127.0.0.1:5000/api/search",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:22.832648",
+    "target": "http://127.0.0.1:5000/api/search",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.024516",
+    "target": "http://127.0.0.1:5000",
+    "operation": "PROOF_OF_FIX_RETEST",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.031651",
+    "target": "http://127.0.0.1:5000",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.039758",
+    "target": "http://127.0.0.1:5000/api/record/1",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.065183",
+    "target": "http://127.0.0.1:5000/api/record/2",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.129758",
+    "target": "http://127.0.0.1:5000",
+    "operation": "PROOF_OF_FIX_RETEST",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.138617",
+    "target": "http://127.0.0.1:5000",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.145015",
+    "target": "http://127.0.0.1:5000/api/record/1",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.173641",
+    "target": "http://127.0.0.1:5000/api/record/2",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.211647",
+    "target": "http://127.0.0.1:5000",
+    "operation": "PROOF_OF_FIX_RETEST",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.219423",
+    "target": "http://127.0.0.1:5000",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.247064",
+    "target": "https://unauthorized-remote-site.com",
+    "operation": "PROOF_OF_FIX_RETEST",
+    "decision": "REJECTED",
+    "reason": "Forbidden target host 'unauthorized-remote-site.com'. Only strictly authorized local testbeds (localhost, 127.0.0.1) are permitted. External scanning is prohibited."
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.277920",
+    "target": "http://127.0.0.1:5000",
+    "operation": "PROOF_OF_FIX_RETEST",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.283911",
+    "target": "http://127.0.0.1:5000",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.289690",
+    "target": "http://127.0.0.1:5000/api/greet",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.374904",
+    "target": "http://127.0.0.1:5000",
+    "operation": "PROOF_OF_FIX_RETEST",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.389813",
+    "target": "http://127.0.0.1:5000",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.397250",
+    "target": "http://127.0.0.1:5000/api/search",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.424046",
+    "target": "http://127.0.0.1:5000/api/search",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.453040",
+    "target": "http://127.0.0.1:5000/api/search",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.476576",
+    "target": "http://127.0.0.1:5000",
+    "operation": "PROOF_OF_FIX_RETEST",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.481349",
+    "target": "http://127.0.0.1:5000",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.487834",
+    "target": "http://127.0.0.1:5000/api/greet",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.543650",
+    "target": "http://127.0.0.1:5000",
+    "operation": "PROOF_OF_FIX_RETEST",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.549751",
+    "target": "http://127.0.0.1:5000",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.556623",
+    "target": "http://127.0.0.1:5000/api/search",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.575876",
+    "target": "http://127.0.0.1:5000/api/search",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.586297",
+    "target": "http://127.0.0.1:5000/api/search",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.653094",
+    "target": "http://127.0.0.1:5000",
+    "operation": "PROOF_OF_FIX_RETEST",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.663197",
+    "target": "http://127.0.0.1:5000",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.671298",
+    "target": "http://127.0.0.1:5000/api/search",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.681847",
+    "target": "http://127.0.0.1:5000/api/search",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.717185",
+    "target": "http://127.0.0.1:5000/api/search",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.797421",
+    "target": "http://127.0.0.1:5000",
+    "operation": "PROOF_OF_FIX_RETEST",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.808525",
+    "target": "http://127.0.0.1:5000",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.814729",
+    "target": "http://127.0.0.1:5000/api/search",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.839451",
+    "target": "http://127.0.0.1:5000/api/search",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.852488",
+    "target": "http://127.0.0.1:5000/api/search",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.919915",
+    "target": "http://127.0.0.1:5000",
+    "operation": "PROOF_OF_FIX_RETEST",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.928230",
+    "target": "http://127.0.0.1:5000",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:23.936558",
+    "target": "http://127.0.0.1:5000/api/greet",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:24.037220",
+    "target": "http://127.0.0.1:5000",
+    "operation": "PROOF_OF_FIX_RETEST",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:24.044225",
+    "target": "http://127.0.0.1:5000",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:24.051056",
+    "target": "http://127.0.0.1:5000/api/greet",
+    "operation": "VULNERABILITY_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:24.212769",
+    "target": "http://127.0.0.1:8080/api/v1/test",
+    "operation": "SCOPE_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:8080"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:24.222062",
+    "target": "http://localhost:5000",
+    "operation": "SCOPE_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://localhost:5000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:24.228440",
+    "target": "http://8.8.8.8:8080",
+    "operation": "INVASIVE_OPERATION",
+    "decision": "REJECTED",
+    "reason": "Forbidden target host '8.8.8.8'. Only strictly authorized local testbeds (localhost, 127.0.0.1) are permitted. External scanning is prohibited."
+  },
+  {
+    "timestamp": "2026-09-25T23:38:24.237603",
+    "target": "http://localhost:3000/app",
+    "operation": "SCOPE_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://localhost:3000"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:24.249264",
+    "target": "http://localhost:8443",
+    "operation": "ADD_EXPLICIT_TARGET",
+    "decision": "ALLOWED",
+    "reason": "Target 'http://localhost:8443' successfully authorized and added to scope."
+  },
+  {
+    "timestamp": "2026-09-25T23:38:24.258002",
+    "target": "http://localhost:8443/api/v1/auth",
+    "operation": "SCOPE_VALIDATION",
+    "decision": "ALLOWED",
+    "reason": "Target matches explicitly authorized local target: http://localhost:8443"
+  },
+  {
+    "timestamp": "2026-09-25T23:38:24.265291",
+    "target": "https://google.com",
+    "operation": "SCOPE_VALIDATION",
+    "decision": "REJECTED",
+    "reason": "Forbidden target host 'google.com'. Only strictly authorized local testbeds (localhost, 127.0.0.1) are permitted. External scanning is prohibited."
+  },
+  {
+    "timestamp": "2026-09-25T23:38:24.276590",
+    "target": "http://1.1.1.1:80",
+    "operation": "SCOPE_VALIDATION",
+    "decision": "REJECTED",
+    "reason": "Forbidden target host '1.1.1.1'. Only strictly authorized local testbeds (localhost, 127.0.0.1) are permitted. External scanning is prohibited."
+  },
+  {
+    "timestamp": "2026-09-25T23:38:24.284915",
+    "target": "https://github.com/login",
+    "operation": "SCOPE_VALIDATION",
+    "decision": "REJECTED",
+    "reason": "Forbidden target host 'github.com'. Only strictly authorized local testbeds (localhost, 127.0.0.1) are permitted. External scanning is prohibited."
+  },
+  {
+    "timestamp": "2026-09-25T23:38:24.292986",
+    "target": "http://54.239.28.85:8080",
+    "operation": "SCOPE_VALIDATION",
+    "decision": "REJECTED",
+    "reason": "Forbidden target host '54.239.28.85'. Only strictly authorized local testbeds (localhost, 127.0.0.1) are permitted. External scanning is prohibited."
+  },
+  {
+    "timestamp": "2026-09-25T23:38:24.304410",
+    "target": "",
+    "operation": "SCOPE_VALIDATION",
+    "decision": "REJECTED",
+    "reason": "Invalid, empty, or malformed target specification."
+  },
+  {
+    "timestamp": "2026-09-25T23:38:24.309140",
+    "target": "   ",
+    "operation": "SCOPE_VALIDATION",
+    "decision": "REJECTED",
+    "reason": "Invalid, empty, or malformed target specification."
+  },
+  {
+    "timestamp": "2026-09-25T23:38:24.313910",
+    "target": "not_a_valid_url",
+    "operation": "SCOPE_VALIDATION",
+    "decision": "REJECTED",
+    "reason": "Unsupported scheme ''. Only ('http', 'https') are allowed."
+  },
+  {
+    "timestamp": "2026-09-25T23:38:24.323378",
+    "target": "http://",
+    "operation": "SCOPE_VALIDATION",
+    "decision": "REJECTED",
+    "reason": "Target URL lacks a valid hostname."
+  },
+  {
+    "timestamp": "2026-09-25T23:38:24.339719",
+    "target": "http://169.254.169.254/latest/meta-data/",
+    "operation": "SCOPE_VALIDATION",
+    "decision": "REJECTED",
+    "reason": "Forbidden target host '169.254.169.254'. Only strictly authorized local testbeds (localhost, 127.0.0.1) are permitted. External scanning is prohibited."
+  },
+  {
+    "timestamp": "2026-09-25T23:38:24.352577",
+    "target": "http://localhost:2222",
+    "operation": "SCOPE_VALIDATION",
+    "decision": "REJECTED",
+    "reason": "Port 2222 is not in the allowed local testing ports list: [80, 443, 3000, 4200, 5000, 5173, 8000, 8080, 8443, 8888, 9000, 9090]."
+  },
+  {
+    "timestamp": "2026-09-25T23:38:24.364717",
+    "target": "ftp://localhost:21",
+    "operation": "SCOPE_VALIDATION",
+    "decision": "REJECTED",
+    "reason": "Unsupported scheme 'ftp'. Only ('http', 'https') are allowed."
+  },
+  {
+    "timestamp": "2026-09-25T23:38:24.375740",
+    "target": "https://malicious-or-remote.com:8080",
+    "operation": "ADD_EXPLICIT_TARGET",
+    "decision": "REJECTED",
+    "reason": "Cannot add target 'https://malicious-or-remote.com:8080': Strict local-only mode rejects non-local hosts."
+  },
+  {
+    "timestamp": "2026-09-25T23:38:24.386436",
+    "target": "https://example.com",
+    "operation": "SCOPE_VALIDATION",
+    "decision": "REJECTED",
+    "reason": "Forbidden target host 'example.com'. Only strictly authorized local testbeds (localhost, 127.0.0.1) are permitted. External scanning is prohibited."
+  },
+  {
+    "timestamp": "2026-09-25T23:38:24.393661",
+    "target": "http://8.8.8.8:8080",
+    "operation": "SCOPE_VALIDATION",
+    "decision": "REJECTED",
+    "reason": "Forbidden target host '8.8.8.8'. Only strictly authorized local testbeds (localhost, 127.0.0.1) are permitted. External scanning is prohibited."
+  },
+  {
+    "timestamp": "2026-09-25T23:38:24.402474",
     "target": "http://localhost:5000",
     "operation": "UNIT_TEST_DISCOVERY",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://localhost:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:05.818030",
+    "timestamp": "2026-09-25T23:38:24.411132",
     "target": "http://localhost:5000",
     "operation": "TARGET_SELECTION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://localhost:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:05.825638",
+    "timestamp": "2026-09-25T23:38:24.417449",
     "target": "https://unauthorized-domain.com",
     "operation": "TARGET_SELECTION",
     "decision": "REJECTED",
     "reason": "Forbidden target host 'unauthorized-domain.com'. Only strictly authorized local testbeds (localhost, 127.0.0.1) are permitted. External scanning is prohibited."
   },
   {
-    "timestamp": "2026-09-25T12:26:05.836442",
+    "timestamp": "2026-09-25T23:38:24.426098",
     "target": "http://192.168.1.50:8080",
     "operation": "SCOPE_VALIDATION",
     "decision": "REJECTED",
     "reason": "Forbidden target host '192.168.1.50'. Only strictly authorized local testbeds (localhost, 127.0.0.1) are permitted. External scanning is prohibited."
   },
   {
-    "timestamp": "2026-09-25T12:26:05.844188",
+    "timestamp": "2026-09-25T23:38:24.430984",
     "target": "http://127.0.0.1:44444",
     "operation": "SCOPE_VALIDATION",
     "decision": "REJECTED",
     "reason": "Port 44444 is not in the allowed local testing ports list: [80, 443, 3000, 4200, 5000, 5173, 8000, 8080, 8443, 8888, 9000, 9090]."
   },
   {
-    "timestamp": "2026-09-25T12:26:05.854903",
+    "timestamp": "2026-09-25T23:38:24.442637",
     "target": "http://127.0.0.1",
     "operation": "SCOPE_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1"
   },
   {
-    "timestamp": "2026-09-25T12:26:05.875051",
+    "timestamp": "2026-09-25T23:38:24.453739",
     "target": "http://localhost",
     "operation": "SCOPE_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://localhost"
   },
   {
-    "timestamp": "2026-09-25T12:26:05.901803",
+    "timestamp": "2026-09-25T23:38:24.504378",
     "target": "http://127.0.0.1:5000",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:05.911153",
+    "timestamp": "2026-09-25T23:38:24.514315",
     "target": "http://127.0.0.1:5000/api/search",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:05.925925",
+    "timestamp": "2026-09-25T23:38:24.530035",
     "target": "http://127.0.0.1:5000/api/search",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:05.942078",
+    "timestamp": "2026-09-25T23:38:24.545390",
     "target": "http://127.0.0.1:5000/api/search",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:06.018336",
+    "timestamp": "2026-09-25T23:38:24.600516",
     "target": "http://127.0.0.1:5000",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:06.029910",
+    "timestamp": "2026-09-25T23:38:24.611533",
     "target": "http://127.0.0.1:5000/api/search",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:06.057982",
+    "timestamp": "2026-09-25T23:38:24.640433",
     "target": "http://127.0.0.1:5000/api/search",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:06.087700",
+    "timestamp": "2026-09-25T23:38:24.654806",
     "target": "http://127.0.0.1:5000/api/search",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:06.196095",
+    "timestamp": "2026-09-25T23:38:24.703584",
     "target": "http://127.0.0.1:5000",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:06.202032",
+    "timestamp": "2026-09-25T23:38:24.713937",
     "target": "http://127.0.0.1:5000/api/greet",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:06.243200",
+    "timestamp": "2026-09-25T23:38:24.773076",
     "target": "http://127.0.0.1:5000",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:06.248752",
+    "timestamp": "2026-09-25T23:38:24.788613",
     "target": "http://127.0.0.1:5000",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:06.256772",
+    "timestamp": "2026-09-25T23:38:24.801446",
     "target": "http://127.0.0.1:5000/api/greet",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:06.363780",
+    "timestamp": "2026-09-25T23:38:24.854405",
     "target": "http://127.0.0.1:5000",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:06.372918",
+    "timestamp": "2026-09-25T23:38:24.860200",
     "target": "http://127.0.0.1:5000/api/record/1",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:06.392963",
+    "timestamp": "2026-09-25T23:38:24.872960",
     "target": "http://127.0.0.1:5000/api/record/2",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:06.451674",
+    "timestamp": "2026-09-25T23:38:24.935011",
     "target": "http://127.0.0.1:5000",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:06.461200",
+    "timestamp": "2026-09-25T23:38:24.941697",
     "target": "http://127.0.0.1:5000/api/record/1",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:06.477597",
+    "timestamp": "2026-09-25T23:38:24.952629",
     "target": "http://127.0.0.1:5000/api/record/2",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:06.529117",
+    "timestamp": "2026-09-25T23:38:25.021296",
     "target": "http://127.0.0.1:5000",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:06.571102",
+    "timestamp": "2026-09-25T23:38:25.047077",
     "target": "http://127.0.0.1:5000/api/search",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:06.622078",
+    "timestamp": "2026-09-25T23:38:25.087693",
     "target": "http://127.0.0.1:5000",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:06.632172",
+    "timestamp": "2026-09-25T23:38:25.093874",
     "target": "http://127.0.0.1:5000",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:06.640374",
+    "timestamp": "2026-09-25T23:38:25.097913",
     "target": "http://127.0.0.1:5000/api/search",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:06.657951",
+    "timestamp": "2026-09-25T23:38:25.136402",
     "target": "http://127.0.0.1:5000/api/search",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:06.683578",
+    "timestamp": "2026-09-25T23:38:25.166501",
     "target": "http://127.0.0.1:5000/api/search",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:06.742766",
+    "timestamp": "2026-09-25T23:38:25.229641",
     "target": "http://127.0.0.1:5000",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:06.756698",
+    "timestamp": "2026-09-25T23:38:25.241983",
     "target": "http://127.0.0.1:5000/api/search",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:06.783557",
+    "timestamp": "2026-09-25T23:38:25.253546",
     "target": "http://127.0.0.1:5000/api/search",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:06.804582",
+    "timestamp": "2026-09-25T23:38:25.288946",
     "target": "http://127.0.0.1:5000/api/search",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:06.877520",
+    "timestamp": "2026-09-25T23:38:25.370390",
     "target": "http://127.0.0.1:5000",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:06.887046",
+    "timestamp": "2026-09-25T23:38:25.377907",
     "target": "http://127.0.0.1:5000/api/search",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:06.907524",
+    "timestamp": "2026-09-25T23:38:25.410932",
     "target": "http://127.0.0.1:5000/api/search",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:06.926299",
+    "timestamp": "2026-09-25T23:38:25.442375",
     "target": "http://127.0.0.1:5000/api/search",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:06.995881",
+    "timestamp": "2026-09-25T23:38:25.488851",
     "target": "http://127.0.0.1:5000/api/search",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:07.004461",
+    "timestamp": "2026-09-25T23:38:25.496864",
     "target": "http://127.0.0.1:5000",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:07.014038",
+    "timestamp": "2026-09-25T23:38:25.505613",
     "target": "http://127.0.0.1:5000/api/search",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:07.049910",
+    "timestamp": "2026-09-25T23:38:25.530287",
     "target": "https://unauthorized-remote-site.com",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "REJECTED",
     "reason": "Forbidden target host 'unauthorized-remote-site.com'. Only strictly authorized local testbeds (localhost, 127.0.0.1) are permitted. External scanning is prohibited."
   },
   {
-    "timestamp": "2026-09-25T12:26:07.060959",
+    "timestamp": "2026-09-25T23:38:25.537902",
     "target": "https://unauthorized-remote-site.com",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "REJECTED",
     "reason": "Forbidden target host 'unauthorized-remote-site.com'. Only strictly authorized local testbeds (localhost, 127.0.0.1) are permitted. External scanning is prohibited."
   },
   {
-    "timestamp": "2026-09-25T12:26:07.093454",
+    "timestamp": "2026-09-25T23:38:25.585531",
     "target": "http://127.0.0.1:5000",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:07.105045",
+    "timestamp": "2026-09-25T23:38:25.599940",
     "target": "http://127.0.0.1:5000/api/greet",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:07.158887",
+    "timestamp": "2026-09-25T23:38:25.703016",
     "target": "http://127.0.0.1:5000",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:07.169300",
+    "timestamp": "2026-09-25T23:38:25.711306",
     "target": "http://127.0.0.1:5000/api/greet",
     "operation": "VULNERABILITY_VALIDATION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:07.217032",
+    "timestamp": "2026-09-25T23:38:25.780835",
     "target": "http://127.0.0.1:5000",
     "operation": "VULNERABILITY_DETECTION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:07.228100",
+    "timestamp": "2026-09-25T23:38:25.794449",
     "target": "http://127.0.0.1:5000",
     "operation": "DISCOVERY_ATTACK_SURFACE",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:07.592192",
+    "timestamp": "2026-09-25T23:38:26.367985",
     "target": "http://127.0.0.1:5000",
     "operation": "VULNERABILITY_DETECTION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:07.599706",
+    "timestamp": "2026-09-25T23:38:26.378314",
     "target": "http://127.0.0.1:5000",
     "operation": "DISCOVERY_ATTACK_SURFACE",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:08.288973",
+    "timestamp": "2026-09-25T23:38:27.059542",
     "target": "http://127.0.0.1:5000",
     "operation": "VULNERABILITY_DETECTION",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:08.296101",
+    "timestamp": "2026-09-25T23:38:27.067212",
     "target": "http://127.0.0.1:5000",
     "operation": "DISCOVERY_ATTACK_SURFACE",
     "decision": "ALLOWED",
     "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   },
   {
-    "timestamp": "2026-09-25T12:26:08.665394",
+    "timestamp": "2026-09-25T23:38:27.487640",
     "target": "https://unauthorized-remote-site.com",
     "operation": "VULNERABILITY_DETECTION",
     "decision": "REJECTED",
     "reason": "Forbidden target host 'unauthorized-remote-site.com'. Only strictly authorized local testbeds (localhost, 127.0.0.1) are permitted. External scanning is prohibited."
-  },
-  {
-    "timestamp": "2026-09-25T12:28:25.651012",
-    "target": "http://127.0.0.1:5000",
-    "operation": "TARGET_SELECTION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:32.702107",
-    "target": "http://127.0.0.1:5000",
-    "operation": "FULL_PIPELINE",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:32.723844",
-    "target": "http://127.0.0.1:5000",
-    "operation": "DISCOVERY_ATTACK_SURFACE",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:33.065324",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_DETECTION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:33.306396",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:33.318959",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:33.328597",
-    "target": "http://127.0.0.1:5000/sqli",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:33.350715",
-    "target": "http://127.0.0.1:5000/sqli",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:33.373120",
-    "target": "http://127.0.0.1:5000/sqli",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:33.413225",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:33.424850",
-    "target": "http://127.0.0.1:5000/api/search",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:33.446683",
-    "target": "http://127.0.0.1:5000/api/search",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:33.466117",
-    "target": "http://127.0.0.1:5000/api/search",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:33.502128",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:33.515532",
-    "target": "http://127.0.0.1:5000/xss",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:33.551465",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:33.560956",
-    "target": "http://127.0.0.1:5000/api/greet",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:33.594827",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:33.607249",
-    "target": "http://127.0.0.1:5000/record/1",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:33.664744",
-    "target": "http://127.0.0.1:5000/record/2",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:33.721096",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:33.731662",
-    "target": "http://127.0.0.1:5000/api/record/1",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:33.751773",
-    "target": "http://127.0.0.1:5000/api/record/2",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:33.936610",
-    "target": "http://127.0.0.1:5000",
-    "operation": "PROOF_OF_FIX_RETEST",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:33.948894",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:33.959024",
-    "target": "http://127.0.0.1:5000/sqli",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:33.985542",
-    "target": "http://127.0.0.1:5000/sqli",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:34.021164",
-    "target": "http://127.0.0.1:5000/sqli",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:34.108108",
-    "target": "http://127.0.0.1:5000",
-    "operation": "PROOF_OF_FIX_RETEST",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:34.122232",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:34.135666",
-    "target": "http://127.0.0.1:5000/api/search",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:34.155549",
-    "target": "http://127.0.0.1:5000/api/search",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:34.180541",
-    "target": "http://127.0.0.1:5000/api/search",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:34.252901",
-    "target": "http://127.0.0.1:5000",
-    "operation": "PROOF_OF_FIX_RETEST",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:34.265275",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:34.279790",
-    "target": "http://127.0.0.1:5000/xss",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:34.322908",
-    "target": "http://127.0.0.1:5000",
-    "operation": "PROOF_OF_FIX_RETEST",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:34.334020",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:34.344891",
-    "target": "http://127.0.0.1:5000/api/greet",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:34.396864",
-    "target": "http://127.0.0.1:5000",
-    "operation": "PROOF_OF_FIX_RETEST",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:34.408209",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:34.421192",
-    "target": "http://127.0.0.1:5000/record/1",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:34.456101",
-    "target": "http://127.0.0.1:5000/record/2",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:34.499374",
-    "target": "http://127.0.0.1:5000",
-    "operation": "PROOF_OF_FIX_RETEST",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:34.509340",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:34.519058",
-    "target": "http://127.0.0.1:5000/api/record/1",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:28:34.561958",
-    "target": "http://127.0.0.1:5000/api/record/2",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:20.191394",
-    "target": "http://127.0.0.1:5000",
-    "operation": "FULL_PIPELINE",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:20.207971",
-    "target": "http://127.0.0.1:5000",
-    "operation": "DISCOVERY_ATTACK_SURFACE",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:20.499067",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_DETECTION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:20.806149",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:20.824682",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:20.841000",
-    "target": "http://127.0.0.1:5000/sqli",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:20.877999",
-    "target": "http://127.0.0.1:5000/sqli",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:20.909487",
-    "target": "http://127.0.0.1:5000/sqli",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:20.977108",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:20.995557",
-    "target": "http://127.0.0.1:5000/api/search",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:21.046291",
-    "target": "http://127.0.0.1:5000/api/search",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:21.085300",
-    "target": "http://127.0.0.1:5000/api/search",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:21.149892",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:21.168976",
-    "target": "http://127.0.0.1:5000/xss",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:21.242543",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:21.255941",
-    "target": "http://127.0.0.1:5000/api/greet",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:21.299097",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:21.341765",
-    "target": "http://127.0.0.1:5000/record/1",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:21.377246",
-    "target": "http://127.0.0.1:5000/record/2",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:21.454539",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:21.467419",
-    "target": "http://127.0.0.1:5000/api/record/1",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:21.512601",
-    "target": "http://127.0.0.1:5000/api/record/2",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:21.704359",
-    "target": "http://127.0.0.1:5000",
-    "operation": "PROOF_OF_FIX_RETEST",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:21.715139",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:21.726012",
-    "target": "http://127.0.0.1:5000/sqli",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:21.759377",
-    "target": "http://127.0.0.1:5000/sqli",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:21.783912",
-    "target": "http://127.0.0.1:5000/sqli",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:21.829237",
-    "target": "http://127.0.0.1:5000",
-    "operation": "PROOF_OF_FIX_RETEST",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:21.839677",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:21.850377",
-    "target": "http://127.0.0.1:5000/api/search",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:21.880865",
-    "target": "http://127.0.0.1:5000/api/search",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:21.896842",
-    "target": "http://127.0.0.1:5000/api/search",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:21.939371",
-    "target": "http://127.0.0.1:5000",
-    "operation": "PROOF_OF_FIX_RETEST",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:21.958511",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:21.971972",
-    "target": "http://127.0.0.1:5000/xss",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:22.033262",
-    "target": "http://127.0.0.1:5000",
-    "operation": "PROOF_OF_FIX_RETEST",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:22.044060",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:22.057214",
-    "target": "http://127.0.0.1:5000/api/greet",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:22.107227",
-    "target": "http://127.0.0.1:5000",
-    "operation": "PROOF_OF_FIX_RETEST",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:22.132652",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:22.146460",
-    "target": "http://127.0.0.1:5000/record/1",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:22.197705",
-    "target": "http://127.0.0.1:5000/record/2",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:22.294282",
-    "target": "http://127.0.0.1:5000",
-    "operation": "PROOF_OF_FIX_RETEST",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:22.308723",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:22.319392",
-    "target": "http://127.0.0.1:5000/api/record/1",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:29:22.344148",
-    "target": "http://127.0.0.1:5000/api/record/2",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:46.675757",
-    "target": "http://127.0.0.1:5000",
-    "operation": "FULL_PIPELINE",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:46.701766",
-    "target": "http://127.0.0.1:5000",
-    "operation": "DISCOVERY_ATTACK_SURFACE",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:47.047887",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_DETECTION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:47.264602",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:47.276269",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:47.289697",
-    "target": "http://127.0.0.1:5000/sqli",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:47.333114",
-    "target": "http://127.0.0.1:5000/sqli",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:47.377544",
-    "target": "http://127.0.0.1:5000/sqli",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:47.452050",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:47.469658",
-    "target": "http://127.0.0.1:5000/api/search",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:47.500946",
-    "target": "http://127.0.0.1:5000/api/search",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:47.548375",
-    "target": "http://127.0.0.1:5000/api/search",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:47.611416",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:47.621536",
-    "target": "http://127.0.0.1:5000/xss",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:47.681373",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:47.699624",
-    "target": "http://127.0.0.1:5000/api/greet",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:47.754497",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:47.772222",
-    "target": "http://127.0.0.1:5000/record/1",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:47.846565",
-    "target": "http://127.0.0.1:5000/record/2",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:47.940554",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:47.953683",
-    "target": "http://127.0.0.1:5000/api/record/1",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:47.974193",
-    "target": "http://127.0.0.1:5000/api/record/2",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:48.132881",
-    "target": "http://127.0.0.1:5000",
-    "operation": "PROOF_OF_FIX_RETEST",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:48.144541",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:48.157097",
-    "target": "http://127.0.0.1:5000/sqli",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:48.176700",
-    "target": "http://127.0.0.1:5000/sqli",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:48.214137",
-    "target": "http://127.0.0.1:5000/sqli",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:48.266777",
-    "target": "http://127.0.0.1:5000",
-    "operation": "PROOF_OF_FIX_RETEST",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:48.277422",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:48.287026",
-    "target": "http://127.0.0.1:5000/api/search",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:48.307781",
-    "target": "http://127.0.0.1:5000/api/search",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:48.325635",
-    "target": "http://127.0.0.1:5000/api/search",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:48.373437",
-    "target": "http://127.0.0.1:5000",
-    "operation": "PROOF_OF_FIX_RETEST",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:48.383679",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:48.394285",
-    "target": "http://127.0.0.1:5000/xss",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:48.463083",
-    "target": "http://127.0.0.1:5000",
-    "operation": "PROOF_OF_FIX_RETEST",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:48.474805",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:48.486624",
-    "target": "http://127.0.0.1:5000/api/greet",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:48.545732",
-    "target": "http://127.0.0.1:5000",
-    "operation": "PROOF_OF_FIX_RETEST",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:48.555493",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:48.564596",
-    "target": "http://127.0.0.1:5000/record/1",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:48.584481",
-    "target": "http://127.0.0.1:5000/record/2",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:48.653020",
-    "target": "http://127.0.0.1:5000",
-    "operation": "PROOF_OF_FIX_RETEST",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:48.668233",
-    "target": "http://127.0.0.1:5000",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:48.685786",
-    "target": "http://127.0.0.1:5000/api/record/1",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
-  },
-  {
-    "timestamp": "2026-09-25T12:31:48.727129",
-    "target": "http://127.0.0.1:5000/api/record/2",
-    "operation": "VULNERABILITY_VALIDATION",
-    "decision": "ALLOWED",
-    "reason": "Target matches explicitly authorized local target: http://127.0.0.1:5000"
   }
 ]

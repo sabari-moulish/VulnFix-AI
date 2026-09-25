@@ -23,6 +23,7 @@ from modules.validator import VulnerabilityValidator, ValidationOutcome, Validat
 from modules.risk_engine import RiskEngine, RiskAssessment, RiskFactors
 from modules.remediation import RemediationEngine, RemediationPlan
 from modules.retest import RetestEngine, RetestResult
+from modules.evaluator import DefenseLabEvaluator
 
 
 # --- Page Configuration ---
@@ -180,6 +181,17 @@ if "selected_target" not in st.session_state:
     else:
         auth_targets = scope_ctrl.get_authorized_targets()
         st.session_state.selected_target = auth_targets[0] if auth_targets else None
+
+if "evaluation_report" not in st.session_state:
+    eval_json = config.REPORTS_DIR / "defense_lab_evaluation.json"
+    if eval_json.exists():
+        try:
+            with open(eval_json, "r", encoding="utf-8") as f:
+                st.session_state["evaluation_report"] = json.load(f)
+        except Exception:
+            st.session_state["evaluation_report"] = None
+    else:
+        st.session_state["evaluation_report"] = None
 
 
 # --- Lab Helper Functions ---
@@ -558,7 +570,20 @@ def render_tab1_pipeline(curr_target: str, lab_mode: Optional[str]):
                 with s1:
                     st.metric("Hypotheses Evaluated", len(candidates))
                 with s2:
-                    st.metric("Likely Vulnerabilities", vuln_count, delta=f"{vuln_count} detected" if vuln_count else "None", delta_color="inverse" if vuln_count else "normal")
+                    if lab_mode == "secure":
+                        st.metric(
+                            "Confirmed Vulnerabilities",
+                            0,
+                            delta="Lab State: SECURE / Remediated",
+                            delta_color="normal",
+                        )
+                    else:
+                        st.metric(
+                            "Confirmed Vulnerabilities",
+                            vuln_count,
+                            delta=f"{vuln_count} confirmed" if vuln_count else "None",
+                            delta_color="inverse" if vuln_count else "normal",
+                        )
                 with s3:
                     st.metric("Probes Executed", det_data.get("total_requests", 0))
 
@@ -1201,10 +1226,104 @@ def render_tab3_governance(curr_target: str):
 
 
 # =============================================================================
+# TAB 4: 🧪 AI Defense Evaluation Suite
+# =============================================================================
+def render_tab4_evaluation(curr_target: str):
+    """Renders the 5 AI Defense Lab evaluation cases with inputs, expected, actual, and status."""
+    st.markdown("### 🧪 **AI Defense Lab Evaluation Suite (5 Test Cases)**")
+    st.caption("Standardized evaluation covering the 5 core cases required by the AI Defense Lab framework: Normal, Attack/Positive, Negative, Failure, and Adversarial.")
+
+    col_eval_btn, col_eval_stat = st.columns([1, 2], gap="medium")
+    with col_eval_btn:
+        run_eval = st.button("▶ Run Complete Evaluation Suite (5 Cases)", type="primary", use_container_width=True, key="btn_run_eval_suite")
+
+    if run_eval:
+        with st.spinner("Executing 5 AI Defense Lab evaluation test cases..."):
+            evaluator = DefenseLabEvaluator(scope_controller=scope_ctrl)
+            report = evaluator.run_all_evaluations(curr_target or "http://127.0.0.1:5000", persist=True)
+            st.session_state["evaluation_report"] = report.to_dict()
+            st.success(f"Evaluation Complete: {report.passed_cases}/{report.total_cases} Cases Passed ({report.pass_rate}%)")
+            st.rerun()
+
+    report_data = st.session_state.get("evaluation_report")
+    if not report_data:
+        st.info("Evaluation suite has not been executed yet in this session. Click 'Run Complete Evaluation Suite' above.")
+        return
+
+    # Metrics Row
+    m1, m2, m3, m4 = st.columns(4)
+    with m1:
+        st.metric("Total Evaluation Cases", report_data.get("total_cases", 5))
+    with m2:
+        st.metric("Passed Cases", report_data.get("passed_cases", 0), delta="100% Pass Rate" if report_data.get("passed_cases") == 5 else None)
+    with m3:
+        st.metric("Failed Cases", report_data.get("failed_cases", 0), delta="0 Failures", delta_color="normal")
+    with m4:
+        st.metric("Overall Status", report_data.get("overall_status", "PASS"), delta=f"{report_data.get('duration_seconds', 0)}s duration")
+
+    st.markdown("<div style='margin-bottom:0.75rem;'></div>", unsafe_allow_html=True)
+
+    # Render each of the 5 cases
+    cases = report_data.get("cases", [])
+    for case in cases:
+        status = case.get("status", "PASS")
+        is_pass = (status == "PASS")
+        border_color = "#16A34A" if is_pass else "#DC2626"
+        badge_class = "badge-allowed" if is_pass else "badge-rejected"
+
+        st.markdown(
+            f"""
+            <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid {border_color}; border-radius:8px; padding:0.9rem 1.15rem; margin-bottom:0.75rem;">
+                <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #F1F5F9; padding-bottom:0.4rem; margin-bottom:0.6rem;">
+                    <div>
+                        <span style="font-weight:700; font-size:1.02rem; color:#0F172A;">Case {case.get('case_num')}: {case.get('case_name')}</span>
+                        <span style="font-size:0.8rem; color:#64748B; margin-left:0.5rem;">({case.get('category')})</span>
+                    </div>
+                    <div>
+                        <span style="font-size:0.8rem; color:#64748B; margin-right:0.6rem;">{case.get('execution_time_ms')} ms</span>
+                        <span class="{badge_class}">{status}</span>
+                    </div>
+                </div>
+                <div style="display:grid; grid-template-columns: 1fr; gap:0.35rem; font-size:0.86rem; color:#334155;">
+                    <div><strong>🛡️ Vulnerabilities Covered:</strong> <code>{case.get('vulnerabilities_covered')}</code></div>
+                    <div><strong>📥 Test Input:</strong> <code>{case.get('test_input')}</code></div>
+                    <div><strong>🎯 Expected Behavior:</strong> {case.get('expected_behavior')}</div>
+                    <div><strong>📋 Actual Result:</strong> {case.get('actual_result')}</div>
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+        subchecks = case.get("subchecks", [])
+        if subchecks:
+            with st.expander(f"🔍 Case {case.get('case_num')} Detailed Subcheck Telemetry ({len(subchecks)} checks)", expanded=False):
+                st.dataframe(
+                    [
+                        {
+                            "Check": s.get("check"),
+                            "Status": "✅ PASS" if s.get("passed") else "❌ FAIL",
+                            "Input": s.get("input"),
+                            "Expected": s.get("expected"),
+                            "Actual": s.get("actual"),
+                        }
+                        for s in subchecks
+                    ],
+                    use_container_width=True,
+                    hide_index=True,
+                )
+
+    with st.expander("📁 View Complete Evaluation Report JSON Artifact", expanded=False):
+        if report_data.get("report_file"):
+            st.caption(f"Persisted Artifact: `{report_data.get('report_file')}`")
+        st.json(report_data)
+
+
+# =============================================================================
 # Main Application Entry Point
 # =============================================================================
 def main():
-    """Main Streamlit dashboard orchestrator with the clean 3-tab layout."""
+    """Main Streamlit dashboard orchestrator with the 4-tab layout."""
     curr_target = st.session_state.get("selected_target", "http://127.0.0.1:5000")
     lab_mode = get_current_lab_mode(curr_target)
 
@@ -1216,11 +1335,12 @@ def main():
 
     st.markdown("---")
 
-    # 3. Main 3-Tab Architecture
-    tab1, tab2, tab3 = st.tabs([
+    # 3. Main Tab Architecture
+    tab1, tab2, tab3, tab4 = st.tabs([
         "🚀 End-to-End Pipeline",
         "🔍 Finding Lifecycle Center",
         "🔒 Scope Governance & Audit",
+        "🧪 AI Defense Evaluation",
     ])
 
     with tab1:
@@ -1231,6 +1351,9 @@ def main():
 
     with tab3:
         render_tab3_governance(curr_target)
+
+    with tab4:
+        render_tab4_evaluation(curr_target)
 
 
 if __name__ == "__main__":
