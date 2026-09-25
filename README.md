@@ -126,3 +126,4 @@ flowchart LR
 ## 👥 Hackathon Track Alignment
 - **Track**: Offensive Security & Red Teaming
 - **Theme**: AI-driven adversarial validation paired with automated defensive remediation to close the feedback loop between discovery and patch verification.
+
