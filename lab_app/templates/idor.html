@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card">
+    <h2>Scenario 3: Broken Object-Level Authorization / IDOR (CWE-639)</h2>
+    <p>
+        Demonstrates direct object reference vulnerability across synthetic multi-tenant organizations.
+    </p>
+    <div style="background: #F1F5F9; padding: 1rem; border-radius: 6px; margin-bottom: 1rem;">
+        <strong>Currently Authenticated:</strong> <code>{{ current_user.username }}</code> (Member of <strong>{{ current_org.name }}</strong>)
+        <br>
+        <span style="font-size: 0.85rem; color: #475569;">
+            Authorized Record for {{ current_user.username }}: <strong>Record ID 1 (REC-001)</strong>
+            <br>
+            Unauthorized Record (Belongs to Organization B): <strong>Record ID 2 (REC-002)</strong>
+        </span>
+    </div>
+
+    <h4>Quick Access Links</h4>
+    <div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+        <a href="/record/1" class="btn btn-primary">View Record 1 (Authorized for User A)</a>
+        <a href="/record/2" class="btn btn-toggle">View Record 2 (Foreign Record / IDOR Test)</a>
+    </div>
+
+    <form method="GET" action="/record_lookup">
+        <label for="record_id"><strong>Lookup Record by Direct ID:</strong></label>
+        <input type="text" id="record_id" name="record_id" value="{{ requested_id or '' }}" placeholder="Enter Record ID (1 or 2)">
+        <button type="submit" class="btn btn-primary">Fetch Record</button>
+    </form>
+</div>
+
+{% if error %}
+<div class="alert alert-danger">
+    <strong>Security Enforcement:</strong> {{ error }}
+</div>
+{% endif %}
+
+{% if record %}
+<div class="card">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <h3>Record Details: {{ record.record_code }}</h3>
+        {% if record.organization_id == current_user.organization_id %}
+            <span class="badge badge-success">Legitimate Access</span>
+        {% else %}
+            <span class="badge badge-danger">IDOR Flaw: Data Leaked Across Tenancy</span>
+        {% endif %}
+    </div>
+    <table>
+        <tr>
+            <th style="width: 25%;">Record Code</th>
+            <td><code>{{ record.record_code }}</code></td>
+        </tr>
+        <tr>
+            <th>Title</th>
+            <td><strong>{{ record.title }}</strong></td>
+        </tr>
+        <tr>
+            <th>Owning Organization</th>
+            <td>{{ record_org_name }}</td>
+        </tr>
+        <tr>
+            <th>Confidential Payload</th>
+            <td><pre style="margin:0; background:#F8FAFC; padding:0.5rem; border:1px solid #E2E8F0;">{{ record.content }}</pre></td>
+        </tr>
+    </table>
+</div>
+{% endif %}
+{% endblock %}

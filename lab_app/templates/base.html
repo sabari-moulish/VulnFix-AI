@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title or "Authorized Security Testing Lab" }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="/" class="brand">🧪 VulnLab Local Testbed</a>
+            <nav>
+                <a href="/">Overview</a>
+                <a href="/sqli">1. SQL Injection</a>
+                <a href="/xss">2. Reflected XSS</a>
+                <a href="/idor">3. Broken Access (IDOR)</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mode-banner {{ 'vulnerable' if is_vulnerable else 'secure' }}">
+        <div>
+            <span>CURRENT SECURITY STATE: </span>
+            <span class="badge {{ 'badge-danger' if is_vulnerable else 'badge-success' }}">
+                {{ 'VULNERABLE (Demonstration Mode)' if is_vulnerable else 'SECURE (Remediated / Fixed Mode)' }}
+            </span>
+            <span style="margin-left: 1rem; font-weight: normal; color: #64748B;">
+                Simulated User: <strong>{{ current_user.username }}</strong> ({{ current_org.name }})
+            </span>
+        </div>
+        <div>
+            <form action="/toggle_mode" method="POST" style="display:inline;">
+                <button type="submit" class="btn btn-toggle">
+                    Switch to {{ 'SECURE (Proof-of-Fix)' if is_vulnerable else 'VULNERABLE' }} Mode
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

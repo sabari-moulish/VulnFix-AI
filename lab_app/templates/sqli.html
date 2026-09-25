@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card">
+    <h2>Scenario 1: SQL Injection (CWE-89)</h2>
+    <p>Search the synthetic laboratory catalog for diagnostic hardware and tools.</p>
+    
+    <form method="GET" action="/sqli">
+        <label for="query"><strong>Product Search Term:</strong></label>
+        <input type="text" id="query" name="query" value="{{ query or '' }}" placeholder="Enter keyword (e.g., Sensor or Test' OR '1'='1)">
+        <button type="submit" class="btn btn-primary">Search Catalog</button>
+    </form>
+</div>
+
+<div class="card">
+    <h3>Executed SQL Query Simulation</h3>
+    <pre style="background: #1E293B; color: #F8FAFC; padding: 1rem; border-radius: 6px; overflow-x: auto;"><code>{{ executed_query }}</code></pre>
+
+    {% if error %}
+    <div class="alert alert-danger" style="margin-top: 1rem;">
+        <strong>Database Query Error:</strong> {{ error }}
+    </div>
+    {% endif %}
+
+    <h4>Search Results ({{ results|length }})</h4>
+    {% if results %}
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Product Name</th>
+                <th>Category</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in results %}
+            <tr>
+                <td>{{ item.id }}</td>
+                <td><strong>{{ item.name }}</strong></td>
+                <td><span class="badge badge-success">{{ item.category }}</span></td>
+                <td>{{ item.description }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <p>No products found matching query.</p>
+    {% endif %}
+</div>
+{% endblock %}

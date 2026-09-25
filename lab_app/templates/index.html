@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card">
+    <h2>Authorized Security Testing Laboratory</h2>
+    <p>
+        This intentionally vulnerable local application provides a controlled, deterministic testbed for evaluating our 
+        <strong>AI-Powered Vulnerability Validation and Proof-of-Fix Platform</strong>.
+    </p>
+    <div class="alert alert-danger" style="margin-top: 1rem;">
+        <strong>Notice:</strong> This application is strictly for authorized local testing on <code>localhost</code> / <code>127.0.0.1</code>. 
+        All data (Organizations, Users, Records) is entirely synthetic and fake.
+    </div>
+</div>
+
+<div class="card">
+    <h3>Active Testing Scenarios</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Scenario</th>
+                <th>CWE</th>
+                <th>Target Endpoint</th>
+                <th>Demonstration Objective</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>1. SQL Injection</strong></td>
+                <td><span class="badge badge-danger">CWE-89</span></td>
+                <td><code>/sqli?query=</code></td>
+                <td>Unescaped query interpolation in product search vs. parameterized query.</td>
+                <td><a href="/sqli" class="btn btn-primary">Test SQLi</a></td>
+            </tr>
+            <tr>
+                <td><strong>2. Reflected XSS</strong></td>
+                <td><span class="badge badge-danger">CWE-79</span></td>
+                <td><code>/xss?name=</code></td>
+                <td>Unescaped parameter reflection into HTML vs. HTML context encoding.</td>
+                <td><a href="/xss" class="btn btn-primary">Test XSS</a></td>
+            </tr>
+            <tr>
+                <td><strong>3. Broken Access (IDOR)</strong></td>
+                <td><span class="badge badge-danger">CWE-639</span></td>
+                <td><code>/record/&lt;id&gt;</code></td>
+                <td>Direct object reference without organization ownership verification.</td>
+                <td><a href="/idor" class="btn btn-primary">Test IDOR</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="card">
+    <h3>Proof-of-Fix Lifecycle</h3>
+    <p>
+        The platform tests the end-to-end lifecycle:
+        <br>
+        <code>VULNERABLE (Demonstrate) ➔ DETECT & VALIDATE ➔ APPLY FIX ➔ RETEST (Proof-of-Fix) ➔ SECURE</code>
+    </p>
+    <p>
+        Use the top banner toggle or <code>POST /toggle_mode</code> to switch between vulnerable and remediated implementations.
+    </p>
+</div>
+{% endblock %}

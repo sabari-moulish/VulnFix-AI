@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card">
+    <h2>Scenario 2: Reflected Cross-Site Scripting (CWE-79)</h2>
+    <p>Submit a greeting or user message to be reflected back in the page response.</p>
+    
+    <form method="GET" action="/xss">
+        <label for="name"><strong>User Name / Greeting Input:</strong></label>
+        <input type="text" id="name" name="name" value="{{ raw_input or '' }}" placeholder="Enter your name (e.g., Alice or &lt;b&gt;Canary&lt;/b&gt;)">
+        <button type="submit" class="btn btn-primary">Generate Greeting</button>
+    </form>
+</div>
+
+<div class="card">
+    <h3>Greeting Output</h3>
+    {% if greeting %}
+    <div style="background: #F1F5F9; border: 1px solid #CBD5E1; padding: 1.5rem; border-radius: 6px;">
+        <!-- In vulnerable mode, reflected_html is marked | safe to demonstrate unescaped reflection -->
+        {% if is_vulnerable %}
+            {{ greeting|safe }}
+        {% else %}
+            {{ greeting }}
+        {% endif %}
+    </div>
+    {% else %}
+    <p>Please enter a name above to generate the response.</p>
+    {% endif %}
+
+    <div style="margin-top: 1rem;">
+        <small style="color: #64748B;">
+            <strong>Implementation note:</strong> 
+            {% if is_vulnerable %}
+                Vulnerable mode renders user-supplied input raw (<code>| safe</code>).
+            {% else %}
+                Secure mode applies automatic HTML context entity encoding.
+            {% endif %}
+        </small>
+    </div>
+</div>
+{% endblock %}
