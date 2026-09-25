@@ -1,11 +1,12 @@
 # 🛡️ VulnFix AI
 
-## AI-Powered Vulnerability Validation & Proof-of-Fix Platform
+## Vulnerability Validation & Proof-of-Fix Platform
 
 **Track:** Offensive Security & Red Teaming
+
 **Security Model:** Authorized, local, intentionally vulnerable environments only
 
-VulnFix AI is a security validation platform designed to bridge the gap between **vulnerability discovery and verified remediation**.
+VulnFix AI is an intelligent security validation platform designed to bridge the gap between **vulnerability discovery and verified remediation**.
 
 Instead of stopping at a potential vulnerability, the platform follows the complete security lifecycle:
 
@@ -36,7 +37,7 @@ VulnFix AI addresses this gap by connecting **detection, validation, evidence, r
 
 VulnFix AI provides an end-to-end vulnerability validation workflow.
 
-### Core capabilities
+### Core Capabilities
 
 1. **Authorized Target Validation**
 
@@ -74,8 +75,8 @@ VulnFix AI provides an end-to-end vulnerability validation workflow.
 
 8. **Proof-of-Fix Retesting**
 
-   * Retests confirmed findings after remediation.
-   * Reports whether the vulnerability remains exploitable or has been successfully fixed.
+   * Retests findings after remediation.
+   * Reports whether the vulnerability remains reproducible or has been successfully fixed.
 
 ---
 
@@ -89,7 +90,7 @@ The included demonstration environment is a deliberately vulnerable Flask applic
 http://127.0.0.1:5000
 ```
 
-### Allowed targets
+### Allowed Targets
 
 The scope controller permits local loopback targets such as:
 
@@ -99,7 +100,7 @@ localhost
 ::1
 ```
 
-### Blocked targets
+### Blocked Targets
 
 The platform is designed to reject:
 
@@ -129,16 +130,16 @@ Every security operation must pass through the scope authorization layer before 
 ```text
                          ┌─────────────────────┐
                          │   Authorized Target │
-                         │  Local Test App     │
+                         │   Local Test App    │
                          └──────────┬──────────┘
                                     │
                                     ▼
                          ┌─────────────────────┐
                          │  Scope Controller   │
-                         │    Gatekeeper       │
+                         │     Gatekeeper      │
                          └──────────┬──────────┘
                                     │
-                           Scope Approved
+                             Scope Approved
                                     │
                                     ▼
                          ┌─────────────────────┐
@@ -149,19 +150,19 @@ Every security operation must pass through the scope authorization layer before 
                                     ▼
                          ┌─────────────────────┐
                          │ Vulnerability       │
-                         │ Detection            │
+                         │ Detection           │
                          └──────────┬──────────┘
                                     │
                                     ▼
                          ┌─────────────────────┐
                          │     Validation      │
-                         │ Controlled Probes   │
+                         │  Controlled Probes  │
                          └──────────┬──────────┘
                                     │
                                     ▼
                          ┌─────────────────────┐
                          │      Evidence       │
-                         │ SQLite + JSON       │
+                         │    SQLite + JSON    │
                          └──────────┬──────────┘
                                     │
                                     ▼
@@ -225,7 +226,7 @@ The demonstration environment includes:
 
 Potential findings are subjected to controlled validation.
 
-A finding becomes useful to the security workflow only when there is reproducible evidence supporting the vulnerability hypothesis.
+A finding becomes useful to the security workflow when reproducible evidence supports the vulnerability hypothesis.
 
 ### 5. Evidence
 
@@ -259,7 +260,7 @@ Contextual Risk Score
 Severity + Priority
 ```
 
-The system supports severity levels:
+The system supports:
 
 | Risk Score | Severity   | Priority |
 | ---------: | ---------- | -------- |
@@ -312,7 +313,7 @@ Proof-of-Fix
 
 The project includes an intentionally vulnerable Flask laboratory application.
 
-### Vulnerabilities demonstrated
+### Vulnerabilities Demonstrated
 
 | Vulnerability | Example Endpoint   |
 | ------------- | ------------------ |
@@ -498,7 +499,7 @@ The remediation engine provides vulnerability-specific defensive guidance.
 Recommended approach:
 
 ```text
-Unsafe dynamic SQL
+Unsafe Dynamic SQL
         ↓
 Parameterized Query
 ```
@@ -543,8 +544,8 @@ The project includes unit and integration tests covering the major security comp
 
 Run:
 
-```bash
-pytest -v
+```cmd
+.\venv\Scripts\python.exe -m pytest -q
 ```
 
 Current validation status:
@@ -582,14 +583,16 @@ A Python virtual environment is recommended.
 
 ## 2. Clone the Repository
 
-```bash
+### SSH
+
+```cmd
 git clone git@github.com:sabari-moulish/VulnFix-AI.git
 cd VulnFix-AI
 ```
 
-For HTTPS users:
+### HTTPS
 
-```bash
+```cmd
 git clone https://github.com/sabari-moulish/VulnFix-AI.git
 cd VulnFix-AI
 ```
@@ -600,10 +603,11 @@ cd VulnFix-AI
 
 ### Windows
 
-```bash
+```cmd
 python -m venv venv
-.\venv\Scripts\activate
 ```
+
+> **Windows PowerShell note:** Some systems may block `Activate.ps1` because of execution-policy restrictions. Activation is not required for this project. The commands below directly use the Python executable inside the virtual environment.
 
 ### Linux / macOS
 
@@ -616,6 +620,14 @@ source venv/bin/activate
 
 ## 4. Install Dependencies
 
+### Windows
+
+```cmd
+.\venv\Scripts\python.exe -m pip install -r requirements.txt
+```
+
+### Linux / macOS
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -624,8 +636,16 @@ pip install -r requirements.txt
 
 ## 5. Run Tests
 
+### Windows
+
+```cmd
+.\venv\Scripts\python.exe -m pytest -q
+```
+
+### Linux / macOS
+
 ```bash
-pytest -v
+pytest -q
 ```
 
 Expected result:
@@ -638,10 +658,18 @@ Expected result:
 
 # ▶️ Running the Platform
 
-Start the intentionally vulnerable laboratory application:
+## Step 1 — Start the Laboratory Application
 
-```bash
-python lab_app/app.py
+Open a terminal in the project directory:
+
+```cmd
+cd /d D:\VulnFix-AI
+```
+
+Start the intentionally vulnerable Flask laboratory:
+
+```cmd
+.\venv\Scripts\python.exe -m lab_app.app
 ```
 
 The laboratory will be available at:
@@ -650,16 +678,28 @@ The laboratory will be available at:
 http://127.0.0.1:5000
 ```
 
-In another terminal, start the VulnFix AI dashboard:
+Keep this terminal running.
 
-```bash
-streamlit run app.py
+---
+
+## Step 2 — Start the VulnFix AI Dashboard
+
+Open a **second terminal**:
+
+```cmd
+cd /d D:\VulnFix-AI
 ```
 
-The dashboard will normally be available at:
+Start Streamlit on port **8502**:
+
+```cmd
+.\venv\Scripts\python.exe -m streamlit run app.py --server.port 8502
+```
+
+The dashboard will be available at:
 
 ```text
-http://localhost:8501
+http://localhost:8502
 ```
 
 ---
@@ -674,17 +714,17 @@ Runs and visualizes the complete security workflow:
 
 ```text
 Scope
- ↓
+  ↓
 Discovery
- ↓
+  ↓
 Detection
- ↓
+  ↓
 Validation
- ↓
+  ↓
 Risk
- ↓
+  ↓
 Remediation
- ↓
+  ↓
 Retest
 ```
 
@@ -694,10 +734,14 @@ Allows investigation of an individual finding across:
 
 ```text
 Detection
- → Validation
- → Risk
- → Remediation
- → Proof-of-Fix
+    →
+Validation
+    →
+Risk
+    →
+Remediation
+    →
+Proof-of-Fix
 ```
 
 ### 🔒 Scope Governance & Audit
@@ -738,18 +782,18 @@ The goal is:
 
 **Track:** Offensive Security & Red Teaming
 
-VulnFix AI directly addresses the track's security validation workflow:
+VulnFix AI addresses the required security validation workflow:
 
-| Track Requirement | VulnFix AI                                  |
-| ----------------- | ------------------------------------------- |
-| Authorized target | Local intentionally vulnerable Flask lab    |
-| Discovery         | Endpoint and input discovery                |
-| Validation        | Controlled deterministic validation         |
-| Evidence          | SQLite + JSON evidence                      |
-| Risk assessment   | Contextual exploitability/impact/confidence |
-| Remediation       | Vulnerability-specific defensive guidance   |
-| Verification      | Automated proof-of-fix retesting            |
-| Safety            | Strict scope controller and audit logging   |
+| Track Requirement | VulnFix AI                                      |
+| ----------------- | ----------------------------------------------- |
+| Authorized target | Local intentionally vulnerable Flask lab        |
+| Discovery         | Endpoint and input discovery                    |
+| Validation        | Controlled deterministic validation             |
+| Evidence          | SQLite + JSON evidence                          |
+| Risk assessment   | Contextual exploitability / impact / confidence |
+| Remediation       | Vulnerability-specific defensive guidance       |
+| Verification      | Automated proof-of-fix retesting                |
+| Safety            | Strict scope controller and audit logging       |
 
 ---
 
@@ -789,7 +833,11 @@ Remediation
 Proof-of-Fix
 ```
 
-The result is a closed-loop security workflow that helps demonstrate not only **"a vulnerability exists"**, but also:
+The result is a closed-loop security workflow that helps demonstrate not only:
+
+> **"A vulnerability exists."**
+
+but also:
 
 > **"Here is the evidence, here is the risk, here is how to fix it, and here is proof that the fix worked."**
 
