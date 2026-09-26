@@ -187,6 +187,54 @@ Every security operation must pass through the scope authorization layer before 
 
 ---
 
+![VulnFix AI Architecture](Architecture%20%26%20Workflow%20Diagram.png)
+
+The diagram shows the controlled end-to-end security validation pipeline:
+
+**Authorized Target → Scope Controller → Discovery → Detection → Validation → Evidence → Risk Assessment → Remediation → Retest / Proof-of-Fix → Security Outcome**
+
+The Scope Controller acts as the safety gate, enforcing authorized local targets, approved ports, bounded requests, and controlled execution before validation begins.
+
+---
+
+# 🎬 Quick Demo
+
+1. Start the local intentionally vulnerable Flask lab.
+2. Start the Streamlit dashboard.
+3. Select the authorized `127.0.0.1:5000` target.
+4. Run the end-to-end validation pipeline.
+5. Review SQL Injection, Reflected XSS, and IDOR evidence.
+6. Review contextual risk scores and remediation guidance.
+7. Apply the secure configuration/remediation and run the retest.
+8. Confirm the findings transition to `FIXED_VERIFIED`.
+
+Dashboard:
+
+```text
+http://localhost:8502
+```
+
+The demo is designed to show the full loop from **discovery → validation → evidence → remediation → proof-of-fix**, rather than detection alone.
+
+---
+
+# 🤖 AI-Assisted Approach
+
+VulnFix AI uses an **AI-assisted security validation approach** combined with deterministic security controls.
+
+The platform applies contextual analysis to findings, evidence collection, risk assessment, remediation guidance, and proof-of-fix verification. Safety-critical behavior remains bounded by deterministic controls such as:
+
+* Authorized-target validation
+* Local-only scope enforcement
+* Approved-port checks
+* Request limits
+* Audit logging
+* Non-destructive execution
+
+This keeps the AI-assisted workflow useful while maintaining predictable security boundaries.
+
+---
+
 # 🔄 Security Validation Workflow
 
 VulnFix AI follows an eight-stage workflow:
@@ -816,6 +864,16 @@ VulnFix AI addresses the required security validation workflow:
 | Remediation       | Vulnerability-specific defensive guidance       |
 | Verification      | Automated proof-of-fix retesting                |
 | Safety            | Strict scope controller and audit logging       |
+
+---
+
+# ⚠️ Limitations
+
+* Designed for authorized local security validation and intentionally vulnerable lab environments.
+* The current demonstration focuses on SQL Injection, Reflected XSS, and IDOR / Broken Access Control.
+* Validation is demonstrated against the included vulnerable Flask laboratory application.
+* The platform is not intended to replace a full production penetration test, enterprise DAST/SAST platform, or comprehensive security assessment.
+* Results depend on the configured laboratory, validation rules, and available evidence.
 
 ---
 
