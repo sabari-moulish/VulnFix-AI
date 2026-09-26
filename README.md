@@ -20,7 +20,7 @@ The platform safely validates vulnerabilities in authorized local test environme
 
 | Verified Metric | Result |
 | --------------- | -----: |
-| Automated tests | **99/99 passed** |
+| Automated tests | **101/101 passed** |
 | Endpoints discovered | **16** |
 | Controllable inputs | **9** |
 | Vulnerabilities validated | **6/6** |
@@ -617,7 +617,7 @@ Run:
 Current validation status:
 
 ```text
-99 / 99 tests passed
+101 / 101 tests passed
 ```
 
 The tests cover:
@@ -646,7 +646,7 @@ VulnFix AI includes a standardized evaluation suite covering the 5 core evaluati
 
 ### 📈 Verified Platform Telemetry
 
-* **99/99 tests passed** across all security engines and evaluation modules
+* **101/101 tests passed** across all security engines and evaluation modules
 * **16 endpoints discovered** across application routes, APIs, and forms
 * **9 controllable inputs** mapped for targeted evaluation
 * **6/6 vulnerabilities validated** with deterministic differential evidence
@@ -739,7 +739,7 @@ pytest -q
 Expected result:
 
 ```text
-99 passed
+101 passed
 ```
 
 ---
