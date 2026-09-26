@@ -269,6 +269,35 @@ class TestRemediationEngine(unittest.TestCase):
         self.assertEqual(plans[1].cwe_id, "CWE-79")
         self.assertEqual(plans[2].cwe_id, "CWE-639")
 
+    def test_generate_remediations_all_with_validations(self):
+        """Tests that generate_remediations_all correlates and passes validation data to generate_remediation."""
+        from unittest.mock import patch
+        from modules.validator import ValidationOutcome
+
+        findings = [
+            {"id": "F1", "vuln_type": "SQL_INJECTION", "cwe_id": "CWE-89"},
+            {"id": "F2", "vuln_type": "REFLECTED_XSS", "cwe_id": "CWE-79"},
+        ]
+        val1 = ValidationOutcome(
+            finding_id="F1",
+            is_confirmed=True,
+            confidence_score=1.0,
+            validation_method="SYNTACTIC_CONFIRMATION",
+            proof_of_concept_safe="' OR '1'='1",
+            details="Confirmed vulnerable",
+        )
+        val2 = {"finding_id": "F2", "reproducible": True}
+        validations = [val1, val2]
+
+        with patch.object(self.engine, "generate_remediation", wraps=self.engine.generate_remediation) as mock_gen:
+            plans = self.engine.generate_remediations_all(findings, validations=validations, persist=False)
+            self.assertEqual(len(plans), 2)
+            self.assertEqual(mock_gen.call_count, 2)
+            call1 = mock_gen.call_args_list[0]
+            call2 = mock_gen.call_args_list[1]
+            self.assertEqual(call1.kwargs.get("validation"), val1)
+            self.assertEqual(call2.kwargs.get("validation"), val2)
+
 
 if __name__ == "__main__":
     unittest.main()

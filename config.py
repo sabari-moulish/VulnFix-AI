@@ -8,6 +8,7 @@ from pathlib import Path
 import sqlite3
 import json
 from typing import List
+from urllib.parse import urlparse
 
 # Base Project Directories
 BASE_DIR = Path(__file__).resolve().parent
@@ -209,9 +210,31 @@ def save_authorized_targets(targets: List[str]) -> None:
         with get_db_connection() as conn:
             cursor = conn.cursor()
             for t in unique_targets:
+                parsed = urlparse(t)
+                try:
+                    explicit_port = parsed.port
+                except ValueError:
+                    explicit_port = None
+
+                if parsed.scheme:
+                    host = parsed.hostname or t.split("//")[-1].split(":")[0].split("/")[0]
+                    if explicit_port is not None:
+                        port = explicit_port
+                    else:
+                        port = 443 if parsed.scheme.lower() == "https" else 80
+                else:
+                    host = t.split("//")[-1].split(":")[0].split("/")[0]
+                    if ":" in t.split("//")[-1]:
+                        try:
+                            port = int(t.split(":")[-1].split("/")[0])
+                        except ValueError:
+                            port = 80
+                    else:
+                        port = 80
+
                 cursor.execute(
                     "INSERT OR IGNORE INTO targets (url, host, port, authorized) VALUES (?, ?, ?, 1)",
-                    (t, t.split("//")[-1].split(":")[0], int(t.split(":")[-1].split("/")[0]) if ":" in t.split("//")[-1] else 80),
+                    (t, host, port),
                 )
             conn.commit()
     except Exception:

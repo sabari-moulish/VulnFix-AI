@@ -176,6 +176,25 @@ class TestScopeController(unittest.TestCase):
         self.assertTrue(len(matching) > 0)
         self.assertEqual(matching[0]["decision"], "REJECTED")
 
+    def test_save_authorized_targets_default_ports(self):
+        """Tests that save_authorized_targets stores port 443 for https:// and 80 for http:// when no explicit port is provided."""
+        from config import save_authorized_targets, get_db_connection
+        test_targets = ["https://localhost", "http://localhost"]
+        save_authorized_targets(test_targets)
+
+        with get_db_connection() as conn:
+            cursor = conn.cursor()
+            cursor.execute("SELECT url, host, port FROM targets WHERE url IN (?, ?)", tuple(test_targets))
+            rows = {row["url"]: dict(row) for row in cursor.fetchall()}
+
+        self.assertIn("https://localhost", rows)
+        self.assertEqual(rows["https://localhost"]["port"], 443)
+        self.assertEqual(rows["https://localhost"]["host"], "localhost")
+
+        self.assertIn("http://localhost", rows)
+        self.assertEqual(rows["http://localhost"]["port"], 80)
+        self.assertEqual(rows["http://localhost"]["host"], "localhost")
+
 
 if __name__ == "__main__":
     unittest.main()

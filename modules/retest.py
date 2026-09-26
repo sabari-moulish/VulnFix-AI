@@ -20,7 +20,7 @@ Distinguishes:
 Persists retest outcomes to SQLite database and reports directory.
 """
 
-from typing import Dict, Any, Optional, Union, List
+from typing import Dict, Any, Optional, Union, List, Tuple
 from dataclasses import dataclass, asdict, field
 from datetime import datetime
 import json

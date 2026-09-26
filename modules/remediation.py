@@ -377,20 +377,30 @@ class RemediationEngine:
         persist: bool = True,
     ) -> List[RemediationPlan]:
         """
-        Generates remediation plans for a batch of findings with correlated risk assessments.
+        Generates remediation plans for a batch of findings with correlated risk assessments and validations.
         """
         risk_map: Dict[str, Any] = {}
         if risk_assessments:
             for r in risk_assessments:
-                fid = r.finding_id if isinstance(r, RiskAssessment) else r.get("finding_id")
+                fid = r.finding_id if isinstance(r, RiskAssessment) else (r.get("finding_id") if isinstance(r, dict) else None)
                 if fid:
                     risk_map[fid] = r
 
+        val_map: Dict[str, Any] = {}
+        if validations:
+            for v in validations:
+                fid = v.finding_id if isinstance(v, ValidationOutcome) else (v.get("finding_id") if isinstance(v, dict) else None)
+                if fid:
+                    val_map[fid] = v
+
         plans: List[RemediationPlan] = []
         for f in findings:
-            fid = f.id if isinstance(f, FindingCandidate) else f.get("id")
+            fid = f.id if isinstance(f, FindingCandidate) else (f.get("id") if isinstance(f, dict) else None)
             risk_match = risk_map.get(fid) if fid else None
-            plan = self.generate_remediation(f, risk_assessment=risk_match, persist=persist)
+            val_match = val_map.get(fid) if fid else None
+            plan = self.generate_remediation(
+                f, risk_assessment=risk_match, validation=val_match, persist=persist
+            )
             plans.append(plan)
 
         return plans
