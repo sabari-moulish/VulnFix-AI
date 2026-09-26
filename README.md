@@ -16,6 +16,23 @@ The platform safely validates vulnerabilities in authorized local test environme
 
 ---
 
+# 📊 Key Results
+
+| Verified Metric | Result |
+| --------------- | -----: |
+| Automated tests | **99/99 passed** |
+| Endpoints discovered | **16** |
+| Controllable inputs | **9** |
+| Vulnerabilities validated | **6/6** |
+| Vulnerability classes | **3** — SQLi, Reflected XSS, IDOR |
+| Evaluation cases | **5/5 passed** |
+| Proof-of-fix | **6/6 FIXED_VERIFIED** |
+| Confirmed vulnerabilities after secure-state retest | **0** |
+
+These results are from the included local laboratory and automated evaluation suite.
+
+---
+
 ## 🎯 Problem Statement
 
 Traditional vulnerability scanners can produce large numbers of findings that still require manual investigation.
@@ -196,6 +213,17 @@ The diagram shows the controlled end-to-end security validation pipeline:
 The Scope Controller acts as the safety gate, enforcing authorized local targets, approved ports, bounded requests, and controlled execution before validation begins.
 
 ---
+
+
+# 🖼️ Screenshots & Visual Walkthrough
+
+### Architecture & Workflow
+
+![VulnFix AI Architecture](Architecture%20%26%20Workflow%20Diagram.png)
+
+The architecture view shows the controlled pipeline from **Authorized Target → Scope Controller → Discovery → Detection → Validation → Evidence → Risk Assessment → Remediation → Retest / Proof-of-Fix → Security Outcome**.
+
+> **Dashboard screenshots:** The repository currently contains the architecture visual. Additional dashboard screenshots can be added here once captured from the running Streamlit UI (pipeline, findings/evidence, risk/remediation, and proof-of-fix).
 
 # 🎬 Quick Demo
 
