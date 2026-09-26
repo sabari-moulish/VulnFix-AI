@@ -217,13 +217,11 @@ The Scope Controller acts as the safety gate, enforcing authorized local targets
 
 # 🖼️ Screenshots & Visual Walkthrough
 
-### Architecture & Workflow
+### Dashboard Screenshots
 
-![VulnFix AI Architecture](Architecture%20%26%20Workflow%20Diagram.png)
+> Add screenshots captured from the running Streamlit UI here: **pipeline**, **findings/evidence**, **risk/remediation**, and **proof-of-fix**.
 
-The architecture view shows the controlled pipeline from **Authorized Target → Scope Controller → Discovery → Detection → Validation → Evidence → Risk Assessment → Remediation → Retest / Proof-of-Fix → Security Outcome**.
-
-> **Dashboard screenshots:** The repository currently contains the architecture visual. Additional dashboard screenshots can be added here once captured from the running Streamlit UI (pipeline, findings/evidence, risk/remediation, and proof-of-fix).
+The architecture diagram is shown above in the **Architecture** section so it appears only once.
 
 # 🎬 Quick Demo
 
