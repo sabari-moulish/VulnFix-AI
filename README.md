@@ -215,14 +215,6 @@ The Scope Controller acts as the safety gate, enforcing authorized local targets
 ---
 
 
-# 🖼️ Screenshots & Visual Walkthrough
-
-### Dashboard Screenshots
-
-> Add screenshots captured from the running Streamlit UI here: **pipeline**, **findings/evidence**, **risk/remediation**, and **proof-of-fix**.
-
-The architecture diagram is shown above in the **Architecture** section so it appears only once.
-
 # 🎬 Quick Demo
 
 1. Start the local intentionally vulnerable Flask lab.
