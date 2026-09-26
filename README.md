@@ -236,6 +236,31 @@ The demo is designed to show the full loop from **discovery → validation → e
 
 ---
 
+## 🔌 APIs and External Dependencies
+
+VulnFix AI does not depend on external third-party security or AI APIs for its core validation workflow.
+
+The platform communicates with the included intentionally vulnerable Flask laboratory through local HTTP endpoints and API routes on:
+
+```text
+http://127.0.0.1:5000
+```
+
+The dashboard uses Python `requests` for local HTTP communication, including lab-mode control and security validation workflows.
+
+### API / Service Details
+
+| Component | Purpose |
+|---|---|
+| Local Flask Lab | Intentionally vulnerable demonstration target |
+| Local HTTP/API endpoints | Discovery, validation, and lab-state control |
+| Python `requests` | HTTP communication with the local lab |
+| SQLite | Persistent findings, evidence, risk, remediation, and retest data |
+
+No external API keys, credentials, or proprietary security APIs are required to run the project.
+
+---
+
 # 🤖 AI-Assisted Approach
 
 VulnFix AI uses an **AI-assisted security validation approach** combined with deterministic security controls.
@@ -698,251 +723,3 @@ python -m venv venv
 > **Windows PowerShell note:** Some systems may block `Activate.ps1` because of execution-policy restrictions. Activation is not required for this project. The commands below directly use the Python executable inside the virtual environment.
 
 ### Linux / macOS
-
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-
----
-
-## 4. Install Dependencies
-
-### Windows
-
-```cmd
-.\venv\Scripts\python.exe -m pip install -r requirements.txt
-```
-
-### Linux / macOS
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## 5. Run Tests
-
-### Windows
-
-```cmd
-.\venv\Scripts\python.exe -m pytest -q
-```
-
-### Linux / macOS
-
-```bash
-pytest -q
-```
-
-Expected result:
-
-```text
-101 passed
-```
-
----
-
-# ▶️ Running the Platform
-
-## Step 1 — Start the Laboratory Application
-
-Open a terminal in the project directory:
-
-```cmd
-cd /d D:\VulnFix-AI
-```
-
-Start the intentionally vulnerable Flask laboratory:
-
-```cmd
-.\venv\Scripts\python.exe -m lab_app.app
-```
-
-The laboratory will be available at:
-
-```text
-http://127.0.0.1:5000
-```
-
-Keep this terminal running.
-
----
-
-## Step 2 — Start the VulnFix AI Dashboard
-
-Open a **second terminal**:
-
-```cmd
-cd /d D:\VulnFix-AI
-```
-
-Start Streamlit on port **8502**:
-
-```cmd
-.\venv\Scripts\python.exe -m streamlit run app.py --server.port 8502
-```
-
-The dashboard will be available at:
-
-```text
-http://localhost:8502
-```
-
----
-
-# 🖥️ Dashboard
-
-The Streamlit dashboard provides three primary areas:
-
-### 🚀 End-to-End Pipeline
-
-Runs and visualizes the complete security workflow:
-
-```text
-Scope
-  ↓
-Discovery
-  ↓
-Detection
-  ↓
-Validation
-  ↓
-Risk
-  ↓
-Remediation
-  ↓
-Retest
-```
-
-### 🔍 Finding Lifecycle Center
-
-Allows investigation of an individual finding across:
-
-```text
-Detection
-    →
-Validation
-    →
-Risk
-    →
-Remediation
-    →
-Proof-of-Fix
-```
-
-### 🔒 Scope Governance & Audit
-
-Provides visibility into:
-
-* Authorized targets
-* Scope decisions
-* Scope audit logs
-* Safety boundaries
-* Architecture
-
----
-
-# 🔐 Security Design Principles
-
-VulnFix AI follows these principles:
-
-* **Authorization before action**
-* **Local-only demonstration**
-* **Bounded requests**
-* **Controlled validation**
-* **Evidence-backed decisions**
-* **Human-visible security outcomes**
-* **Auditable scope decisions**
-* **No uncontrolled exploitation**
-* **Proof-of-fix instead of detection-only reporting**
-
-The goal is not exploitation for its own sake.
-
-The goal is:
-
-> **Find → Prove → Prioritize → Fix → Verify**
-
----
-
-# 🏆 Hackathon Track Alignment
-
-**Track:** Offensive Security & Red Teaming
-
-VulnFix AI addresses the required security validation workflow:
-
-| Track Requirement | VulnFix AI                                      |
-| ----------------- | ----------------------------------------------- |
-| Authorized target | Local intentionally vulnerable Flask lab        |
-| Discovery         | Endpoint and input discovery                    |
-| Validation        | Controlled deterministic validation             |
-| Evidence          | SQLite + JSON evidence                          |
-| Risk assessment   | Contextual exploitability / impact / confidence |
-| Remediation       | Vulnerability-specific defensive guidance       |
-| Verification      | Automated proof-of-fix retesting                |
-| Safety            | Strict scope controller and audit logging       |
-
----
-
-# ⚠️ Limitations
-
-* Designed for authorized local security validation and intentionally vulnerable lab environments.
-* The current demonstration focuses on SQL Injection, Reflected XSS, and IDOR / Broken Access Control.
-* Validation is demonstrated against the included vulnerable Flask laboratory application.
-* The platform is not intended to replace a full production penetration test, enterprise DAST/SAST platform, or comprehensive security assessment.
-* Results depend on the configured laboratory, validation rules, and available evidence.
-
----
-
-# ⚠️ Responsible Use
-
-This project is intended for:
-
-* Security education
-* Authorized penetration testing
-* Local application security testing
-* Controlled vulnerability research
-* Defensive security validation
-
-Only test applications and systems for which you have explicit authorization.
-
-Do not use this project to scan or attack third-party systems, public infrastructure, accounts, or organizations without authorization.
-
----
-
-# 📌 Project Summary
-
-**VulnFix AI** is an authorized security validation platform that goes beyond vulnerability detection.
-
-It connects:
-
-```text
-Discovery
-    ↓
-Validation
-    ↓
-Evidence
-    ↓
-Risk
-    ↓
-Remediation
-    ↓
-Proof-of-Fix
-```
-
-The result is a closed-loop security workflow that helps demonstrate not only:
-
-> **"A vulnerability exists."**
-
-but also:
-
-> **"Here is the evidence, here is the risk, here is how to fix it, and here is proof that the fix worked."**
-
----
-
-## 📜 License
-
-This project was developed as a hackathon security research and demonstration project.
-
-Use only in authorized environments.
